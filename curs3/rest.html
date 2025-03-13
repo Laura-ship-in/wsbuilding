@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="httpGet()">genreaza utilizatori</button>
+
+    <h2 class="pb-2 border-bottom">Lista utilizatori</h2>
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">lista utilizatori</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">
+                ${myUsers[i].first_name} ${myUsers[i].last_name}    
+            </h3>
+            <p></p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <img src="${myUsers[i].avatar}">
+            <p>${myUsers[i].email}</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+
+    <script src="./rest.js"></script>
+</body>
+</html>
